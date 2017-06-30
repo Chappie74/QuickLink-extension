@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Quick Link",
+    "short_name": "QL",
+    "version": "1.0",
+    "description": "Simple and convenient way to transfer URLs from PC's browser to mobile device.",
+    "icons": {
+        "128": "ql128.png",
+        "48": "ql48.png",
+        "16": "ql16.png"
+    },
+    "browser_action":{
+        "default_icon": "ql16.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs"
+    ]
+    
+}

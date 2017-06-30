@@ -1,0 +1,22 @@
+#dummy{
+    height:120px;
+    width:120px;
+    border:2px solid black;
+    
+    position:relative;
+}
+
+h3{
+    text-align:center;
+}
+
+#display{
+    width:120px;
+    height:120px;
+    border-radius: 10px 10px;
+    border: 0px;
+}
+
+body{
+    background: linear-gradient(#bac7db,#A5BEA0, #a8aeb7);
+}

@@ -1,0 +1,28 @@
+<!-- Sections of this code was adpoted from https://developers.google.com/chart/infographics/docs/post_requests -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="popup.js" ></script>
+  <link rel="stylesheet" type="text/css" href="style.css" >
+  
+  </head>
+  <body>
+    <form action='https://chart.googleapis.com/chart' method='POST' id='post_form' target="display"
+          onsubmit="this.action = 'https://chart.googleapis.com/chart?chid=' + (new Date()).getMilliseconds(); return true;">  <input type='hidden' name='cht' value='qr' />
+      <input type='hidden' name='cht' value='qr' />
+      <input type='hidden' name='chs' value='120x120' />
+      <input type='hidden' id='link' name='chl' value='Click extension again to load correct url.' /> <!-- will capture the link of current page and use jquery to modify this-->
+    </form>
+    
+    <h3>QR CODE</h3>
+    
+    <div id="dummy">
+        <iframe name="display" id="display" src="post_infographic.html" scrolling="no" ></iframe> <!--This iframe is where the qr code will be displayed-->
+    </div>
+  </body>
+  
+  
+  
+</html>
